@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+   
+    <link rel="stylesheet" href="Todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link type="image/png" sizes="16x16" rel="icon" href="./fevicon/icons8-todoist-color-16.png">
+<meta name="msapplication-square70x70logo" content=".../icons8-todoist-70.png">
+<meta name="msapplication-TileImage" content=".../icons8-todoist-144.png">
+<meta name="msapplication-square150x150logo" content=".../icons8-todoist-150.png">
+<meta name="msapplication-square310x310logo" content=".../icons8-todoist-310.png">
+<meta name="msapplication-TileColor" content="#C0FFEE">
+<meta name="application-name" content="Beautiful application name">
+</head>
+<body>
+
+    <!-- bg-img -->
+    <div class="background-img">
+        <img src="./images/background.jpg" alt="backgroung-img">
+    </div>
+    <div class="containe">
+        <div class="header">
+            <div class="title">
+                TODO
+            </div>
+            <div class="theme">
+               
+                <i class="fa-solid fa-sun"></i>
+                
+
+            </div>
+        </div>
+        <div class="n-todo">
+            <div class="check">
+                <div class="check-mark">
+                    
+                </div>
+
+                </div>
+                <div class="n-todo-input">
+                    <form onsubmit="addItem(event)" >
+                        <input id="submit-search" type="text" placeholder="Create new todo...">
+                    </form>
+                </div>
+            </div>
+
+              <div class="todo-items">
+                <div class="todo-items-name">
+
+                </div>
+                
+                <div class="todo-items-information">
+                    <div class="items-left">
+                        <span id="number"> 0</span> items left
+                    </div>
+                    <div class="items-status">
+                        <span>All</span>
+                        <span>Active</span>
+                        <span>Complete</span>
+                    </div>
+                    <div class="clear">
+                        <span onclick="clr()">Clear All task</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+     
+    
+    </div>
+
+    
+
+
+    
+
+    <script src="todolist.js"></script>
+</body>
+</html>
